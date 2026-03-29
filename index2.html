@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE catalog.html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -35,43 +35,49 @@
     </nav>
     </header>
     <main>
-        <div class="main-header">
+        <nav class="breadcrumb">
             <img src="#" alt="Вид Седоны">
             <h2>Гостиницы Седоны</h2>
             <a href="index.html"><img src="home.png" alt="Вернуться обратно"></a>
             <p>Гостиницы</p>
-        </div>
-        <section class="list-infrastructure">
-            <label>
-                <input type="checkbox"> Бассейн
-            </label>
-            <label>
-                <input type="checkbox"> Парковка
-            </label>
-            <label>
+        </nav>
+        <fieldset class="legend">
+            <form>
+                <label>
+                    <input type="checkbox"> Бассейн
+                </label>
+            </form>
+            <form>
+                <label>
+                    <input type="checkbox"> Парковка
+                </label>
+            </form>
+            <form>
+              <label>
                 <input type="checkbox"> Wi-Fi
-            </label>
-        </section>
+              </label>
+            </form>
+        </fieldset>
         <section class="list-house">
-            <label>
+              <label>
                 <input type="radio" name="house"> Гостиница
-            </label>
-            <label>
+              </label>
+              <label>
                 <input type="radio" name="house"> Мотель
-            </label>
-            <label>
+              </label>
+              <label>
                 <input type="radio" name="house"> Апартаменты
             </label>
         </section>
         <section class="list-cost">
-            <ul>
+            <div>
                 <label>
-                    <input type="text">
+                    <input type="number" placeholder="0">
                 </label>
                 <label>
-                    <input type="text">
+                    <input type="number" placeholder="90000">
                 </label>
-            </ul>
+            </div>
             <label>
                 <input type="range">
             </label>
@@ -81,7 +87,7 @@
                 <button type="button">Применить</button>
             </label>
             <label>
-                <input type="reset">
+                <button type="reset">Сбросить</button>
             </label>
         </section>
         <section class="selection">
@@ -91,6 +97,50 @@
                 <option>Сначала дороже</option>
             </select>
         </section>
+        <div class="card-amara-resort">
+          <img src="#" alt="Фото гостиницы Amara Resort & Spa">
+          <h2>Amara Resort & Spa</h2>
+          <p>Гостиница</p>
+          <p>от 4000 ₽</p>
+
+          <a href="#"><button type="button">Подробно</button></a>
+          <button type="button">В избранное</button>
+          <p>⭐⭐⭐⭐</p>
+          <p>Рейтинг: 8,5</p>
+        </div>
+        <div class="card-villas-at-poco">
+          <img src="#" alt="Фото гостиницы Villas at Poco Diablo">
+          <h2>Villas at Poco Diablo</h2>
+          <p>Гостиница</p>
+          <p>от 5000 ₽</p>
+
+          <a href="#"><button type="button">Подробно</button></a>
+          <button type="button">В избранное</button>
+          <p>⭐⭐⭐⭐</p>
+          <p>Рейтинг: 9,2</p>
+        </div>
+        <div class="card-desert-quail">
+          <img src="#" alt="Фото гостиницы Desert Quail Inn">
+          <h2>Desert Quail Inn</h2>
+          <p>Гостиница</p>
+          <p>от 2500 ₽</p>
+
+          <a href="#"><button type="button">Подробно</button></a>
+          <button type="button">В избранное</button>
+          <p>⭐⭐⭐</p>
+          <p>Рейтинг: 6,9</p>
+        </div>
+        <div class="card-greentree-inn">
+          <img src="#" alt="Фото гостиницы GreenTree Inn">
+          <h2>GreenTree Inn</h2>
+          <p>Гостиница</p>
+          <p>от 1500 ₽</p>
+
+          <a href="#"><button type="button">Подробно</button></a>
+          <button type="button">В избранное</button>
+          <p>⭐⭐</p>
+          <p>Рейтинг: 5,0</p>
+        </div>
     </main>
     <footer>
     <section class="section-list">
