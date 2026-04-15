@@ -1,75 +1,67 @@
-<!DOCTYPE catalog.html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="catalog.css">
     <meta charset="utf-8">
-    <title>Седона</title>
+    <title>Поиск гостиницы</title>
   </head>
   <body>
-    <header class="page-header">
-        <a class = "header-logo-link" href="#">
-        <img class="header-logo" src="C:\Users\Tarya\Desktop\bybuck-\img\Frame 19.png" alt="Логотип седоны">
-      </a>
     <nav class="navigation">
-        <ul class="navigation-main-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О себе</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-main-list">
-          <li class="navigation-item">
-            <img src="C:\Users\Tarya\Desktop\bybuck-\img\search.png" alt="Поиск">
-          </li>
-          <li class="navigation-item">
-            <img src="C:\Users\Tarya\Desktop\bybuck-\img\heart.png" alt="Избранное">
-          </li>
-          <li class="navigation-item">
-            <a href="#">Хочу сюда!</a>
-          </li>
-        </ul>
+      <img class="header-logo" src=".\img\logo.svg" alt="Логотип седоны">
+          <ul class="navigation-link">
+            <li><a href="index.html" class="navigation-link-more">Главная</a></li>
+            <li><a href="about.html" class="navigation-link-more">О Седоне</a></li>
+            <li><a href="catalog.html" class="navigation-link-more">Гостиницы</a></li>
+          </ul>
+          <ul class="navigation-items">
+            <li><img src=".\img\search.svg" alt="Поиск" class="navigation-items-more"></li>
+            <li><img src=".\img\heart.svg" alt="Избранное" class="navigation-items-more"></li>
+            <li><a class="want-here" href="#">ХОЧУ СЮДА!</a></li>
+          </ul>
     </nav>
-    </header>
-    <main>
-        <nav class="breadcrumb">
-          <h2>Гостиницы Седоны</h2>
-          <a href="index.html"><img src="C:\Users\Tarya\Desktop\bybuck-\img\home.png" alt="Домой"></a>
-          <img src="C:\Users\Tarya\Desktop\bybuck-\img\breadcrumbs.png" alt="Вернуться обратно">
-          <p>Гостиницы</p>
-        </nav>
-        <fieldset class="legend">
-            <form>
-                <label>
-                    <input type="checkbox"> Бассейн
-                </label>
-            </form>
-            <form>
-                <label>
-                    <input type="checkbox"> Парковка
-                </label>
-            </form>
-            <form>
-              <label>
-                <input type="checkbox"> Wi-Fi
-              </label>
-            </form>
-        </fieldset>
+<main>
+  <section class="features-list">
+    <nav class="breadcrumb">
+      <h2 class="title-white">Гостиницы Седоны</h2>
+    <div class="back-home">
+      <a href="index.html"><img src=".\img\back-home.svg" alt="Домой" class="back-home-element"></a>
+      <img src=".\img\breadcrumbs.svg" alt="Вернуться обратно" class="back-home-element">
+      <p class="back-home-text">Гостиницы</p>
+    </div>
+    </nav>
+  <section class="filters">
+    <fieldset class="infrastructure">
+      <h2 class="title-filters">Инфраструктура:</h2>
+      <form>
+        <label class="filters-item">
+          <input type="checkbox"> Бассейн
+        </label>
+      </form>
+      <form>
+        <label class="filters-item">
+          <input type="checkbox"> Парковка
+        </label>
+      </form>
+      <form>
+        <label class="filters-item">
+          <input type="checkbox"> Wi-Fi
+        </label>
+      </form>
+    </fieldset>
         <section class="list-house">
-              <label>
+          <h2 class="title-filters">Тип Жилья:</h2>
+              <label class="filters-item">
                 <input type="radio" name="house"> Гостиница
               </label>
-              <label>
+              <label class="filters-item">
                 <input type="radio" name="house"> Мотель
               </label>
-              <label>
+              <label class="filters-item">
                 <input type="radio" name="house"> Апартаменты
             </label>
         </section>
         <section class="list-cost">
+          <h2 class="title-filters">Стоимость, ₽:</h2>
             <div>
                 <label>
                     <input type="number" placeholder="0">
@@ -90,6 +82,8 @@
                 <button type="reset">Сбросить</button>
             </label>
         </section>
+  </section>
+  </section>
         <section class="selection">
             <select>
                 <option>Популярные</option>
@@ -143,25 +137,23 @@
         </div>
     </main>
   <footer>
-    <section class="section-list">
-      <div>
-        <h2 class="article-first">Подпишитесь на рассылку</h2>
-        <p class="article-second">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <input type="email"/>
-        <button type="button">Подписаться</button>
+    <section class="footer-list">
+      <div class="footer-subscribe">
+        <h2 class="slogan-footer">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <p class="bottom-text-footer">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <input type="email" placeholder="Ваш e-mail" class="email">
+        <button type="button" class="button-email">ПОДПИСАТЬСЯ</button>
       </div>
     </section>
-    <section class="section-footer">
-      <div>
-        <p>+7(812)812-12-12</p>
-        <img src="C:\Users\Tarya\Desktop\bybuck-\img\logo_htmlacademy.png" alt=".html academy">
+      <div class="footer-row">
+        <img src=".\img\html-logo.svg" alt="html academy" class="logo-html">
+        <p class="number">+7(812)812-12-12</p>
+      <div class="social-group">
+        <img src=".\img\vk.svg" alt="vk" class="social-media">
+        <img src=".\img\telegram.svg" alt="telegram" class="social-media">
+        <img src=".\img\youtube.svg" alt="youtube" class="social-media">
       </div>
-      <div class="social-media">
-        <img src="C:\Users\Tarya\Desktop\bybuck-\img\vk.png" alt="vk">
-        <img src="C:\Users\Tarya\Desktop\bybuck-\img\telegram.png" alt="telegram">
-        <img src="C:\Users\Tarya\Desktop\bybuck-\img\youtube.png" alt="youtube">
       </div>
-    </section>
   </footer>
   </body>
 </html>
