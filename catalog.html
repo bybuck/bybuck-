@@ -62,36 +62,37 @@
         </section>
         <section class="list-cost">
           <h2 class="title-filters">Стоимость, ₽:</h2>
-            <div>
+            <div class="price">
                 <label>
-                    <input type="number" placeholder="0">
+                    <input type="number" placeholder="0" class="price-from">
                 </label>
                 <label>
-                    <input type="number" placeholder="90000">
+                    <input type="number" placeholder="90000" class="price-before">
                 </label>
             </div>
             <label>
-                <input type="range">
+                <input type="range" class="range">
             </label>
         </section>
         <section class="apply-reset">
             <label>
-                <button type="button">Применить</button>
+                <button type="button" class="apply">ПРИМЕНИТЬ</button>
             </label>
             <label>
-                <button type="reset">Сбросить</button>
+                <button type="reset" class="reset">СБРОСИТЬ</button>
             </label>
         </section>
   </section>
   </section>
-        <section class="selection">
-            <select>
-                <option>Популярные</option>
-                <option>Сначала дешевле</option>
-                <option>Сначала дороже</option>
-            </select>
-        </section>
-        <div class="card-amara-resort">
+    <section class="selection">
+      <select>
+        <option>Популярные</option>
+        <option>Сначала дешевле</option>
+        <option>Сначала дороже</option>
+      </select>
+      </section>
+      <section class="card-hotel">
+        <div class="hotel-section">
           <img src="C:\Users\Tarya\Desktop\bybuck-\img\hotel-1.png" alt="Фото гостиницы Amara Resort & Spa">
           <h2>Amara Resort & Spa</h2>
           <p>Гостиница</p>
@@ -102,7 +103,7 @@
           <p>⭐⭐⭐⭐</p>
           <p>Рейтинг: 8,5</p>
         </div>
-        <div class="card-villas-at-poco">
+        <div class="hotel-section">
           <img src="C:\Users\Tarya\Desktop\bybuck-\img\hotel-2.png" alt="Фото гостиницы Villas at Poco Diablo">
           <h2>Villas at Poco Diablo</h2>
           <p>Гостиница</p>
@@ -113,7 +114,7 @@
           <p>⭐⭐⭐⭐</p>
           <p>Рейтинг: 9,2</p>
         </div>
-        <div class="card-desert-quail">
+        <div class="hotel-section">
           <img src="C:\Users\Tarya\Desktop\bybuck-\img\hotel-3.png" alt="Фото гостиницы Desert Quail Inn">
           <h2>Desert Quail Inn</h2>
           <p>Гостиница</p>
@@ -124,7 +125,7 @@
           <p>⭐⭐⭐</p>
           <p>Рейтинг: 6,9</p>
         </div>
-        <div class="card-greentree-inn">
+        <div class="hotel-section">
           <img src="C:\Users\Tarya\Desktop\bybuck-\img\hotel-4.png" alt="Фото гостиницы GreenTree Inn">
           <h2>GreenTree Inn</h2>
           <p>Гостиница</p>
@@ -135,14 +136,17 @@
           <p>⭐⭐</p>
           <p>Рейтинг: 5,0</p>
         </div>
+      </section>
     </main>
   <footer>
     <section class="footer-list">
       <div class="footer-subscribe">
         <h2 class="slogan-footer">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p class="bottom-text-footer">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <div class="email-input">
         <input type="email" placeholder="Ваш e-mail" class="email">
         <button type="button" class="button-email">ПОДПИСАТЬСЯ</button>
+      </div>
       </div>
     </section>
       <div class="footer-row">
