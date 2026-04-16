@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     width: auto;
+    font-family: 'PT sans', sans-serif, system-ui;
 }
 
 .navigation {
@@ -22,7 +23,7 @@ body {
     justify-content: space-between;
 }
 
-.header-logo {
+.header-logo {                   /*на макете логотип наезжает на фон, что за свойство надо вписать?*/
     margin-left: 70px;
 }
 
@@ -35,13 +36,12 @@ body {
 }
 
 .navigation-link-more {
+    font-weight: 700;
     color: #000000;
     text-decoration: none;
     padding: 20px 16px;
     font-size: 20px;
     line-height: 24px;
-    font-family: 'PT sans', sans-serif, system-ui;
-    font-weight: 700;
     letter-spacing: 0%;
     border-bottom: 2px solid transparent;
 }
@@ -67,12 +67,10 @@ body {
     border: none;
     background-color: #756157 ;
     color: #ffffff;
-    width: 160px;
     min-height: 36px;
     padding: 8px 34px;
     border-radius: 4px;
     list-style: none;
-    font-family: 'PT sans', sans-serif, system-ui;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -92,7 +90,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    background-image: url('./img/index-background.jpg');
+    background-image: url('./img/index-background.jpg');       /*немного не поняла, как вставить рамку снизу которая как треугольники*/
     background-size: 100%;
     background-repeat: no-repeat;
     padding-top: 51px;
@@ -117,7 +115,6 @@ body {
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -151,7 +148,6 @@ body {
 }
 
 .bottom-text-style {
-    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -210,8 +206,7 @@ body {
     height: 385px;
 }
 
-.title-middle-xl {
-    font-family: 'PT sans', sans-serif, system-ui;
+.title-middle-xl {               /*я чёто здесь напортачила, теперь если я уменьшаю размер страницы, то спарва у меня появляется пустота, сама не поняла чё сделала*/
     width: 175px;
     font-weight: 700;
     font-size: 24px;
@@ -222,7 +217,6 @@ body {
 }
 
 .title-advantages-xl {
-    font-family: 'PT sans', sans-serif, system-ui;
     width: 175px;
     font-weight: 700;
     font-size: 24px;
@@ -242,7 +236,6 @@ body {
 }
 
 .title-lead-xl {
-    font-family: 'PT sans', sans-serif, system-ui;
     width: 197px;
     font-weight: 700;
     font-size: 24px;
@@ -261,7 +254,6 @@ body {
 }
 
 .subtitle-middle-l {
-    font-family: 'PT sans', sans-serif, system-ui;
     padding-left: 85px;
     padding-right: 85px;
     font-weight: 400;
@@ -273,7 +265,6 @@ body {
 }
 
 .subtitle-lead-l {
-    font-family: 'PT sans', sans-serif, system-ui;
     padding-left: 85px;
     padding-right: 85px;
     font-weight: 400;
@@ -354,7 +345,6 @@ body {
     border-radius: 4px;
     list-style: none;
     text-decoration: none;
-    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -383,7 +373,6 @@ body {
 }
 
 .bottom-text-footer {
-    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -409,7 +398,6 @@ body {
     color: #ffffff;
     padding: 8px 50px;
     font-size: 20px;
-    font-family: 'PT-sans-700', sans-serif;
     font-weight: 700;
     line-height: 36px;
     border-radius: 0 4px 4px 0;
@@ -445,7 +433,7 @@ body {
     margin-bottom: 30px;
 }
 
-.logo-html:hover {
+.logo-html:hover {                    /*предполагаю, что оно не работает*/
     color: #756157;
 }
 
