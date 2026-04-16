@@ -3,26 +3,26 @@
   <head>
     <link rel="stylesheet" href="catalog.css">
     <meta charset="utf-8">
-    <title>Поиск гостиницы</title>
+    <title>Седона</title>
   </head>
   <body>
     <nav class="navigation">
-      <img class="header-logo" src=".\img\logo.svg" alt="Логотип седоны">
+      <img class="header-logo" src="./img/logo.svg" alt="Логотип седоны">
           <ul class="navigation-link">
             <li><a href="index.html" class="navigation-link-more">Главная</a></li>
             <li><a href="about.html" class="navigation-link-more">О Седоне</a></li>
             <li><a href="catalog.html" class="navigation-link-more">Гостиницы</a></li>
           </ul>
           <ul class="navigation-items">
-            <li><img src=".\img\search.svg" alt="Поиск" class="navigation-items-more"></li>
-            <li><img src=".\img\heart.svg" alt="Избранное" class="navigation-items-more"></li>
-            <li><a class="want-here" href="#">ХОЧУ СЮДА!</a></li>
+            <li><a href="#"><img src="./img/search.svg" alt="Поиск" class="navigation-items-more"></a></li>
+            <li><a href="#"><img src="./img/heart.svg" alt="Избранное" class="navigation-items-more"></a></li>
+            <li><button type="button" class="want-here">Хочу сюда!</button></li>
           </ul>
     </nav>
 <main>
   <section class="features-list">
     <nav class="breadcrumb">
-      <h2 class="title-white">Гостиницы Седоны</h2>
+      <h2 class="title-xl">Гостиницы Седоны</h2>
     <div class="back-home">
       <a href="index.html"><img src=".\img\back-home.svg" alt="Домой" class="back-home-element"></a>
       <img src=".\img\breadcrumbs.svg" alt="Вернуться обратно" class="back-home-element">
@@ -36,13 +36,9 @@
         <label class="filters-item">
           <input type="checkbox"> Бассейн
         </label>
-      </form>
-      <form>
         <label class="filters-item">
           <input type="checkbox"> Парковка
         </label>
-      </form>
-      <form>
         <label class="filters-item">
           <input type="checkbox"> Wi-Fi
         </label>
@@ -85,77 +81,103 @@
   </section>
   </section>
     <section class="selection">
-      <select>
+      <p class="text">Найдено гостиниц:</p>
+      <select class="rating">
         <option>Популярные</option>
         <option>Сначала дешевле</option>
         <option>Сначала дороже</option>
       </select>
-      </section>
+    <span class="controls-list">
+      <img src="./img/4 elements.svg" alt="4 элемента" class="controls">
+      <img src="./img/1 element.svg" alt="1 элемент" class="controls">
+      <img src="./img/list.svg" alt="Упорядоченный список" class="controls">
+    </span>
+    </section>
       <section class="card-hotel">
         <div class="hotel-section">
-          <img src="C:\Users\Tarya\Desktop\bybuck-\img\hotel-1.png" alt="Фото гостиницы Amara Resort & Spa">
-          <h2>Amara Resort & Spa</h2>
-          <p>Гостиница</p>
+          <img src="./img/amara resort.jpg" alt="Фото гостиницы Amara Resort & Spa">
+          <h2 class="title-hotel-xl">Amara Resort & Spa</h2>
+        <span class="additions">
+          <p class="subtitle-type-hotel">Гостиница</p>
           <p>от 4000 ₽</p>
-
-          <a href="#"><button type="button">Подробно</button></a>
-          <button type="button">В избранное</button>
-          <p>⭐⭐⭐⭐</p>
+        </span>
+        <span class="additions">
+          <a href="#"><button type="button" class="style-button detail">Подробно</button></a>
+          <button type="button" class="style-button favourites">В избранное</button>
+        </span>
+        <span class="additions">
+          <img src="./img/4 stars.svg">
           <p>Рейтинг: 8,5</p>
+        </span>
         </div>
         <div class="hotel-section">
-          <img src="C:\Users\Tarya\Desktop\bybuck-\img\hotel-2.png" alt="Фото гостиницы Villas at Poco Diablo">
-          <h2>Villas at Poco Diablo</h2>
-          <p>Гостиница</p>
+          <img src="./img/villas.jpg" alt="Фото гостиницы Villas at Poco Diablo">
+          <h2 class="title-hotel-xl">Villas at Poco Diablo</h2>
+        <span class="additions">
+          <p class="subtitle-type-hotel">Гостиница</p>
           <p>от 5000 ₽</p>
-
-          <a href="#"><button type="button">Подробно</button></a>
-          <button type="button">В избранное</button>
-          <p>⭐⭐⭐⭐</p>
+        </span>
+        <span class="additions">
+          <a href="#"><button type="button" class="style-button detail">Подробно</button></a>
+          <button type="button" class="style-button favourites">В избранное</button>
+        </span>
+        <span class="additions">
+          <img src="./img/4 stars.svg">
           <p>Рейтинг: 9,2</p>
+        </span>
         </div>
         <div class="hotel-section">
-          <img src="C:\Users\Tarya\Desktop\bybuck-\img\hotel-3.png" alt="Фото гостиницы Desert Quail Inn">
-          <h2>Desert Quail Inn</h2>
-          <p>Гостиница</p>
+          <img src="./img/desert.jpg" alt="Фото гостиницы Desert Quail Inn">
+          <h2 class="title-hotel-xl">Desert Quail Inn</h2>
+        <span class="additions">
+          <p class="subtitle-type-hotel">Гостиница</p>
           <p>от 2500 ₽</p>
-
-          <a href="#"><button type="button">Подробно</button></a>
-          <button type="button">В избранное</button>
-          <p>⭐⭐⭐</p>
+        </span>
+        <span class="additions">
+          <a href="#"><button type="button" class="style-button detail">Подробно</button></a>
+          <button type="button" class="style-button favourites">В избранное</button>
+        </span>
+        <span class="additions">
+          <img src="./img/3 stars.svg">
           <p>Рейтинг: 6,9</p>
+        </span>
         </div>
         <div class="hotel-section">
-          <img src="C:\Users\Tarya\Desktop\bybuck-\img\hotel-4.png" alt="Фото гостиницы GreenTree Inn">
-          <h2>GreenTree Inn</h2>
-          <p>Гостиница</p>
+          <img src="./img/greentree.jpg" alt="Фото гостиницы GreenTree Inn">
+          <h2 class="title-hotel-xl">GreenTree Inn</h2>
+        <span class="additions">
+          <p class="subtitle-type-hotel">Гостиница</p>
           <p>от 1500 ₽</p>
-
-          <a href="#"><button type="button">Подробно</button></a>
-          <button type="button">В избранное</button>
-          <p>⭐⭐</p>
+        </span>
+        <span class="additions">
+          <a href="#"><button type="button" class="style-button detail">Подробно</button></a>
+          <button type="button" class="style-button favourites">В избранное</button>
+        </span>
+        <span class="additions">
+          <img src="./img/2 stars.svg">
           <p>Рейтинг: 5,0</p>
+        </span>
         </div>
       </section>
     </main>
-  <footer>
+<footer>
     <section class="footer-list">
       <div class="footer-subscribe">
-        <h2 class="slogan-footer">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-        <p class="bottom-text-footer">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="slogan-footer slogan-style">Подпишитесь на рассылку</h2>
+        <p class="bottom-text-style bottom-text-footer">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <div class="email-input">
         <input type="email" placeholder="Ваш e-mail" class="email">
-        <button type="button" class="button-email">ПОДПИСАТЬСЯ</button>
+        <button type="button" class="button-email">Подписаться</button>
       </div>
       </div>
     </section>
       <div class="footer-row">
-        <img src=".\img\html-logo.svg" alt="html academy" class="logo-html">
-        <p class="number">+7(812)812-12-12</p>
+        <img src="./img/html-logo.svg" alt="html academy" class="logo-html">
+        <a href="tel:+7(812)812-12-12" class="number">+7(812)812-12-12</a>
       <div class="social-group">
-        <img src=".\img\vk.svg" alt="vk" class="social-media">
-        <img src=".\img\telegram.svg" alt="telegram" class="social-media">
-        <img src=".\img\youtube.svg" alt="youtube" class="social-media">
+        <a href="#"><img src="./img/vk.svg" alt="vk" class="social-media"></a>
+        <a href="#"><img src="./img/telegram.svg" alt="telegram" class="social-media"></a>
+        <a href="#"><img src="./img/youtube.svg" alt="youtube" class="social-media"></a>
       </div>
       </div>
   </footer>

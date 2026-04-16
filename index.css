@@ -1,11 +1,13 @@
 @font-face {
-    font-family: 'PT-sans-400';
-    src: url('.\fonts\ptsans-400.woff2');
+    font-family: PT Sans;
+    font-weight: 400;
+    src: url('./fonts/ptsans-400.woff2');
 }
 
 @font-face {
-    font-family: 'PT-sans-700';
-    src: url('.\fonts\ptsans-700.woff2');
+    font-family: PT Sans;
+    font-weight: 700;
+    src: url('./fonts/ptsans-700.woff2');
 }
 
 body {
@@ -38,9 +40,14 @@ body {
     padding: 20px 16px;
     font-size: 20px;
     line-height: 24px;
-    font-family: 'PT-sans-700', sans-serif;
+    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 700;
     letter-spacing: 0%;
+    border-bottom: 2px solid transparent;
+}
+
+.navigation-link-more:hover {
+    border-bottom-color: #000000;
 }
 
 .navigation-items {
@@ -57,6 +64,7 @@ body {
 }
 
 .want-here {
+    border: none;
     background-color: #756157 ;
     color: #ffffff;
     width: 160px;
@@ -64,20 +72,35 @@ body {
     padding: 8px 34px;
     border-radius: 4px;
     list-style: none;
-    text-decoration: none;
-    font-family: 'PT-sans-700', sans-serif;
+    font-family: 'PT sans', sans-serif, system-ui;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.want-here:hover {
+    background-color: #615048;
+}
+
+.want-here:active {
+    opacity: 0.8;
 }
 
 .main-top-img {
-    background-image: url('.\img\index-background.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-image: url('./img/index-background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 51px;
+    padding-bottom: 51px;
 }
 
 .top-image {
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
@@ -88,32 +111,80 @@ body {
     align-items: center;
 }
 
-.slogan {
-    font-family: 'PT-sans-700', sans-serif;
+.slogan-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     color: #000000;
-    padding-top: 69px;
-    white-space: pre-wrap;
 }
 
-.bottom-text {
-    font-family: 'PT-sans-400', sans-serif;
+.slogan-main {
+    padding-top: 69px;
+    padding-left: 290px;
+    padding-right: 290px;
+    text-transform: uppercase;
+}
+
+.slogan-section {
+    padding-left: 348px;
+    padding-right: 348px;
+    padding-top: 64px;
+}
+
+.slogan-search {
+    padding-top: 96px;
+    padding-left: 452px;
+    padding-right: 452px;
+}
+
+.slogan-footer {
+   padding-left: 398px;
+   padding-right: 398px;
+   padding-top: 96px;
+   color: #ffffff;
+}
+
+.bottom-text-style {
+    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     letter-spacing: 0%;
-    width: auto;
-    max-width: 700px;
-    height: 52px;
+}
+
+.bottom-text-main {
+    padding-left: 275px;
+    padding-right: 275px;
+    padding-bottom: 90px;
+}
+
+.bottom-text-section {
+    padding-left: 355px;
+    padding-right: 355px;
+    padding-bottom: 64px;
+}
+
+.bottom-text-search {
+    padding-left: 304px;
+    padding-right: 304px;
+}
+
+.bottom-text-footer {
+    padding-left: 343px;
+    padding-right: 343px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: center;
+    justify-content: stretch;
     width: 100%;
     height: auto;
 }
@@ -139,53 +210,60 @@ body {
     height: 385px;
 }
 
-.title-black {
-    width: auto;
-    font-family: 'PT-sans-700', sans-serif;
-    max-width: 197px;
-    height: 56px;
+.title-middle-xl {
+    font-family: 'PT sans', sans-serif, system-ui;
+    width: 175px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
     color: #000000;
+    text-transform: uppercase;
 }
 
-.title-black::after {
+.title-advantages-xl {
+    font-family: 'PT sans', sans-serif, system-ui;
+    width: 175px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.title-middle-xl::after {
     content: "";
     display: block;
-    width: 60px;
-    height: 2px;
-    background-color: #0000004D;
-    margin: 20px auto 0;
+    width: auto;
+    max-width: 60px;
+    border-bottom: 2px solid #0000004D;
+    margin: 30px auto 0;
 }
 
-.title-white {
-    width: auto;
-    font-family: 'PT-sans-700', sans-serif;
-    max-width: 197px;
-    height: 56px;
+.title-lead-xl {
+    font-family: 'PT sans', sans-serif, system-ui;
+    width: 197px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
-.title-white::after {
+.title-lead-xl::after {
     content: "";
     display: block;
     width: 60px;
-    height: 2px;
-    background-color: #ffffff;
-    margin: 20px auto 0;
+    border-bottom:2px solid #FFFFFF4D;
+    margin: 30px auto 0;
 }
 
-.subtitle-black {
-    width: auto;
-    font-family: 'PT-sans-400', sans-serif;
-    max-width: 270px;
-    height: 42px;
+.subtitle-middle-l {
+    font-family: 'PT sans', sans-serif, system-ui;
+    padding-left: 85px;
+    padding-right: 85px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -194,11 +272,10 @@ body {
     color: #000000;
 }
 
-.subtitle-white {
-    width: auto;
-    font-family: 'PT-sans-400', sans-serif;
-    max-width: 230px;
-    height: 42px;
+.subtitle-lead-l {
+    font-family: 'PT sans', sans-serif, system-ui;
+    padding-left: 85px;
+    padding-right: 85px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -277,35 +354,36 @@ body {
     border-radius: 4px;
     list-style: none;
     text-decoration: none;
-    font-family: 'PT-sans-700', sans-serif;
+    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     border: none;
     margin-top: 54px;
+    text-transform: uppercase;
+}
+
+.button-search:hover {
+    background-color: #615048;
+}
+
+.button-search:active{
+    opacity: 0.8;
 }
 
 .footer-list {
    display: flex;
    justify-content: center;
    text-align: center;
-   background-color: #00004B;
+   background-image: url('./img/subscribe-backgroundimg.jpg');
+   background-size: 100%;
+   background-repeat: no-repeat;
    height: 420px;
    margin-top: 96px;
 }
 
-.slogan-footer {
-    font-family: 'PT-sans-700', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    color: #ffffff;
-    padding-top: 69px;
-    white-space: pre-wrap;
-}
-
 .bottom-text-footer {
-    font-family: 'PT-sans-400', sans-serif;
+    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -328,7 +406,7 @@ body {
 
 .button-email {
     background-color: #82B3D3;
-    color: white;
+    color: #ffffff;
     padding: 8px 50px;
     font-size: 20px;
     font-family: 'PT-sans-700', sans-serif;
@@ -337,6 +415,15 @@ body {
     border-radius: 0 4px 4px 0;
     border: none;
     height: 52px;
+    text-transform: uppercase;
+}
+
+.button-email:hover {
+    background-color: #68A2CA;
+}
+
+.button-email:active {
+    opacity: 0.8;
 }
 
 .email-input {
@@ -358,7 +445,17 @@ body {
     margin-bottom: 30px;
 }
 
+.logo-html:hover {
+    color: #756157;
+}
+
+.logo-html:active {
+    opacity: 0.5;
+}
+
 .number {
+    color: #000000;
+    text-decoration: none;
     width: 331px;
     height: 40px;
     font-weight: 400;
@@ -366,6 +463,18 @@ body {
     line-height: 40px;
 }
 
+.number:hover {
+    color: #756157;
+}
+
+.number:active {
+    opacity: 0.5;
+}
+
 .social-media {
     padding-left: 27px;
+}
+
+.social-media:active {
+    opacity: 0.5;
 }

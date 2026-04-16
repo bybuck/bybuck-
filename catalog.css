@@ -1,17 +1,20 @@
 @font-face {
-    font-family: 'PT-sans-400';
-    src: url('.\fonts\ptsans-400.woff2');
+    font-family: PT Sans;
+    font-weight: 400;
+    src: url('./fonts/ptsans-400.woff2');
 }
 
 @font-face {
-    font-family: 'PT-sans-700';
-    src: url('.\fonts\ptsans-700.woff2');
+    font-family: PT Sans;
+    font-weight: 700;
+    src: url('./fonts/ptsans-700.woff2');
 }
 
 body {
     margin: 0;
     padding: 0;
     width: auto;
+    font-family: 'PT sans', sans-serif, system-ui;
 }
 
 .navigation {
@@ -38,9 +41,14 @@ body {
     padding: 20px 16px;
     font-size: 20px;
     line-height: 24px;
-    font-family: 'PT-sans-700', sans-serif;
+    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 700;
     letter-spacing: 0%;
+    border-bottom: 2px solid transparent;
+}
+
+.navigation-link-more:hover {
+    border-bottom-color: #000000;
 }
 
 .navigation-items {
@@ -57,6 +65,7 @@ body {
 }
 
 .want-here {
+    border: none;
     background-color: #756157 ;
     color: #ffffff;
     width: 160px;
@@ -64,34 +73,39 @@ body {
     padding: 8px 34px;
     border-radius: 4px;
     list-style: none;
-    text-decoration: none;
-    font-family: 'PT-sans-700', sans-serif;
+    font-family: 'PT sans', sans-serif, system-ui;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.want-here:hover {
+    background-color: #615048;
+}
+
+.want-here:active {
+    opacity: 0.8;
 }
 
 .features-list {
-    background-color: #00004B;
+    background-image: url('./img/catalog-background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
     padding: 0;
     margin: 0;
 }
 
-.breadcrumbs {
-}
-
-.title-white {
-    font-family: 'PT-sans-700', sans-serif;
+.title-xl {
     font-size: 60px;
     color: #ffffff;
     font-weight: 700;
     line-height: 78px;
     padding-left: 70px;
     padding-top: 35px;
-    margin-bottom: 0;
+    margin: 0;
 }
-
 
 .back-home {
     display: flex;
@@ -104,22 +118,27 @@ body {
 
 .back-home-element {
     padding-right: 15px;
-
 }
 
 .back-home-text {
-    font-family: 'PT-sans-400', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
     color: #ffffff;
 }
 
+.back-home-text:hover {
+    opacity: 0.7;
+}
+
+.back-home-text:active{
+    opacity: 0.5;
+}
+
 .filters {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 40px;
     padding-left: 70px;
     padding-right: 70px;
     padding-bottom: 70px;
@@ -134,7 +153,6 @@ body {
 
 .title-filters {
     color: #ffffff;
-    font-family: 'PT-sans-700', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -152,22 +170,24 @@ body {
     gap: 40px;
 }
 
-
 .apply-reset {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding-top: 70px;
+    padding-top: 98px;
 }
 
 .filters-item {
-    font-family: 'PT-sans-400', sans-serif;
     color: #ffffff;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
+}
+
+.filters-item:hover {
+    opacity: 0.5;
 }
 
 .apply {
@@ -182,16 +202,31 @@ body {
     line-height: 20px;
 }
 
+.apply:hover {
+    background-color: #68A2CA;
+}
+
+.apply:active {
+    opacity: 0.7;
+}
+
 .reset {
     border: none;
     color: #ffffff;
     background-color: transparent;
     padding: 8px 50px;
     border-radius: 4px;
-    font-family: 'PT-sans-700', sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+}
+
+.reset:hover{
+    opacity: 0.7;
+}
+
+.reset:active {
+    opacity: 0.2;
 }
 
 .price {
@@ -207,6 +242,10 @@ body {
     max-width: 143px;
 }
 
+.price-from:hover {
+    filter: brightness(0.85);
+}
+
 .price-before {
     border: none;
     padding: 12px 20px;
@@ -214,6 +253,11 @@ body {
     width: auto;
     max-width: 143px;
 }
+
+.price-before:hover {
+    filter: brightness(0.85);
+}
+
 
 .range {
     width: auto;
@@ -223,21 +267,139 @@ body {
 .card-hotel {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 70px;
     padding-right: 70px;
+    padding-top: 47px;
     gap: 15px;
     row-gap: 40px;
-    width: auto;
-    max-width: 1060px;
+
 }
 
 .hotel-section {
-    max-width: 340px;
-    height: 438px;
+    border: 1px solid #E5E5E5;
+    padding: 20px 20px;
+    border-radius: 4px;
+}
 
+.hotel-section p {
+    margin: 0;
+}
+
+.title-hotel-xl {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.subtitle-type-hotel {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.style-button {
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.detail {
+    background-color: #756157;
+}
+
+.detail:hover {
+    background-color: #615048;
+}
+
+.detail:active {
+    opacity: 0.7;
+}
+
+.favourites {
+    background-color: #82B3D3;
+}
+
+.favourites:hover {
+    background-color: #68A2CA;
+}
+
+.favourites:active{
+    opacity: 0.7;
+}
+
+.additions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 16px;
+}
+
+.selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 50px;
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.rating {
+    padding: 14px 20px;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: start;
+}
+
+.rating:hover {
+    border: 2px solid #68A2CA;
+}
+
+.rating:active {
+    opacity: 0.5;
+}
+
+.controls-list {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+
+.controls {
+    padding: 14px 12px;
+    border-radius: 4px;
+    border: 2px solid #E5E5E5;
+}
+
+.controls:hover {
+    border: 2px solid #000000;
+}
+
+.controls:active {
+    border: 2px solid #000000;
 }
 
 
@@ -257,34 +419,105 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slogan-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.slogan-footer {
+   padding-left: 398px;
+   padding-right: 398px;
+   padding-top: 96px;
+   color: #000000;
+}
+
+.bottom-text-style {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0%;
+}
+
+.bottom-text-footer {
+    padding-left: 363px;
+    padding-right: 363px;
+}
 
 .footer-list {
    display: flex;
    justify-content: center;
    text-align: center;
-   background-color: #00004B;
+   background-size: 100%;
+   background-repeat: no-repeat;
    height: 420px;
    margin-top: 96px;
 }
 
-.slogan-footer {
-    font-family: 'PT-sans-700', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    color: #ffffff;
-    padding-top: 69px;
-    white-space: pre-wrap;
-}
-
 .bottom-text-footer {
-    font-family: 'PT-sans-400', sans-serif;
+    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     letter-spacing: 0%;
     width: 500px;
-    color: #ffffff;
+    color: #000000;
     margin-top: 20px;
     margin-bottom: 54px;
     margin-left: 170px;
@@ -297,11 +530,12 @@ body {
     border: none;
     height: 50px;
     padding-left: 20px;
+    background-color: #F2F2F2;
 }
 
 .button-email {
     background-color: #82B3D3;
-    color: white;
+    color: #ffffff;
     padding: 8px 50px;
     font-size: 20px;
     font-family: 'PT-sans-700', sans-serif;
@@ -310,6 +544,15 @@ body {
     border-radius: 0 4px 4px 0;
     border: none;
     height: 52px;
+    text-transform: uppercase;
+}
+
+.button-email:hover {
+    background-color: #68A2CA;
+}
+
+.button-email:active {
+    opacity: 0.8;
 }
 
 .email-input {
@@ -331,7 +574,17 @@ body {
     margin-bottom: 30px;
 }
 
+.logo-html:hover {
+    color: #756157;
+}
+
+.logo-html:active {
+    opacity: 0.5;
+}
+
 .number {
+    color: #000000;
+    text-decoration: none;
     width: 331px;
     height: 40px;
     font-weight: 400;
@@ -339,6 +592,18 @@ body {
     line-height: 40px;
 }
 
+.number:hover {
+    color: #756157;
+}
+
+.number:active {
+    opacity: 0.5;
+}
+
 .social-media {
     padding-left: 27px;
+}
+
+.social-media:active {
+    opacity: 0.5;
 }
