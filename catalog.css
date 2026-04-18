@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     width: auto;
-    font-family: 'PT sans', sans-serif, system-ui;
+    font-family: 'PT sans', system-ui, sans-serif;
 }
 
 .navigation {
@@ -27,6 +27,16 @@ body {
     margin-left: 70px;
 }
 
+.header-logo-container {
+  position: relative;
+}
+
+.header-logo-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .navigation-link {
     display: flex;
     flex-direction: row;
@@ -36,13 +46,12 @@ body {
 }
 
 .navigation-link-more {
+    font-weight: 700;
     color: #000000;
     text-decoration: none;
     padding: 20px 16px;
     font-size: 20px;
     line-height: 24px;
-    font-family: 'PT sans', sans-serif, system-ui;
-    font-weight: 700;
     letter-spacing: 0%;
     border-bottom: 2px solid transparent;
 }
@@ -68,12 +77,9 @@ body {
     border: none;
     background-color: #756157 ;
     color: #ffffff;
-    width: 160px;
-    min-height: 36px;
     padding: 8px 34px;
     border-radius: 4px;
     list-style: none;
-    font-family: 'PT sans', sans-serif, system-ui;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -196,7 +202,6 @@ body {
     background-color: #82B3D3;
     padding: 8px 50px;
     border-radius: 4px;
-    font-family: 'PT-sans-700', sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -411,9 +416,10 @@ body {
 
 .number-pages {
     display: flex;
-    justify-content: start;
+    padding-left: 70px;
+    padding-top: 90px;
     gap: 8px;
-
+    list-style: none;
 }
 
 .page {
@@ -497,7 +503,6 @@ body {
 }
 
 .bottom-text-footer {
-    font-family: 'PT sans', sans-serif, system-ui;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -524,7 +529,6 @@ body {
     color: #ffffff;
     padding: 8px 50px;
     font-size: 20px;
-    font-family: 'PT-sans-700', sans-serif;
     font-weight: 700;
     line-height: 36px;
     border-radius: 0 4px 4px 0;

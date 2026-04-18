@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     width: auto;
-    font-family: 'PT sans', sans-serif, system-ui;
+    font-family: 'PT sans', system-ui, sans-serif;
 }
 
 .navigation {
@@ -23,8 +23,18 @@ body {
     justify-content: space-between;
 }
 
-.header-logo {                   /*на макете логотип наезжает на фон, что за свойство надо вписать?*/
+.header-logo {
     margin-left: 70px;
+}
+
+.header-logo-container {
+  position: relative;
+}
+
+.header-logo-link {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .navigation-link {
@@ -67,7 +77,6 @@ body {
     border: none;
     background-color: #756157 ;
     color: #ffffff;
-    min-height: 36px;
     padding: 8px 34px;
     border-radius: 4px;
     list-style: none;
@@ -90,7 +99,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    background-image: url('./img/index-background.jpg');       /*немного не поняла, как вставить рамку снизу которая как треугольники*/
+    background-image: url('./img/index-background.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     padding-top: 51px;
@@ -121,30 +130,15 @@ body {
     color: #000000;
 }
 
-.slogan-main {
+.slogan-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 69px;
-    padding-left: 290px;
-    padding-right: 290px;
-    text-transform: uppercase;
 }
 
-.slogan-section {
-    padding-left: 348px;
-    padding-right: 348px;
-    padding-top: 64px;
-}
-
-.slogan-search {
-    padding-top: 96px;
-    padding-left: 452px;
-    padding-right: 452px;
-}
-
-.slogan-footer {
-   padding-left: 398px;
-   padding-right: 398px;
-   padding-top: 96px;
-   color: #ffffff;
+.slogan-color {
+    color: #ffffff;
 }
 
 .bottom-text-style {
@@ -154,26 +148,23 @@ body {
     letter-spacing: 0%;
 }
 
-.bottom-text-main {
-    padding-left: 275px;
-    padding-right: 275px;
-    padding-bottom: 90px;
+.bottom-text-position {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: auto;
 }
 
-.bottom-text-section {
-    padding-left: 355px;
-    padding-right: 355px;
-    padding-bottom: 64px;
+.bottom-text-padding-max {
+    padding-bottom: 69px;
 }
 
-.bottom-text-search {
-    padding-left: 304px;
-    padding-right: 304px;
+.bottom-text-padding-min {
+    padding-bottom: 50px;
 }
 
-.bottom-text-footer {
-    padding-left: 343px;
-    padding-right: 343px;
+.bottom-text-color {
+    color: #ffffff;
 }
 
 .container {
@@ -206,27 +197,29 @@ body {
     height: 385px;
 }
 
-.title-middle-xl {               /*я чёто здесь напортачила, теперь если я уменьшаю размер страницы, то спарва у меня появляется пустота, сама не поняла чё сделала*/
+.title-position-xl {
     width: 175px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    color: #000000;
     text-transform: uppercase;
 }
 
-.title-advantages-xl {
+.title-position-none-after {
     width: 175px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    color: #000000;
     text-transform: uppercase;
 }
 
-.title-middle-xl::after {
+.title-color-xl {
+    color: #ffffff;
+}
+
+.title-position-xl::after {
     content: "";
     display: block;
     width: auto;
@@ -235,25 +228,16 @@ body {
     margin: 30px auto 0;
 }
 
-.title-lead-xl {
-    width: 197px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.title-lead-xl::after {
+.title-color-xl::after {
     content: "";
     display: block;
-    width: 60px;
-    border-bottom:2px solid #FFFFFF4D;
+    width: auto;
+    max-width: 60px;
+    border-bottom: 2px solid #FFFFFF4D;
     margin: 30px auto 0;
 }
 
-.subtitle-middle-l {
+.subtitle-position {
     padding-left: 85px;
     padding-right: 85px;
     font-weight: 400;
@@ -261,62 +245,32 @@ body {
     line-height: 21px;
     letter-spacing: 0%;
     text-align: center;
-    color: #000000;
 }
 
-.subtitle-lead-l {
-    padding-left: 85px;
-    padding-right: 85px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0%;
-    text-align: center;
+.subtitle-color {
     color: #ffffff;
 }
 
-.card-dark-blue {
+.card-position {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
+    height: 100%;
+    flex: 1 1 50%;
+}
+
+.card-color-xl {
     background-color: #82B3D3;
-    width: auto;
-    height: 100%;
-    flex: 1 1 50%;
 }
 
-.card-white {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    width: auto;
-    height: 100%;
-    flex: 1 1 50%;
+.card-color-sides {
+    background-color: #F0F6FA;
 }
 
-.card-light {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #83B3D31F;
-    width: auto;
-    height: 100%;
-    flex: 1 1 50%;
-}
-
-.card-blue {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #83B3D333;
-    width: auto;
-    height: 100%;
-    flex: 1 1 50%;
+.card-color-middle {
+    background-color: #E6F0F6;
 }
 
 .img-sedona {
@@ -343,13 +297,11 @@ body {
     padding: 8px 50px;
     color: white;
     border-radius: 4px;
-    list-style: none;
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     border: none;
-    margin-top: 54px;
     text-transform: uppercase;
 }
 
@@ -465,4 +417,139 @@ body {
 
 .social-media:active {
     opacity: 0.5;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2CC;
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 64px 70px;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+
+.modal-auth {
+    width: 717px;
+    height: 576px;
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 85px;
+    padding: 0;
+    right: 52px;
+    width: 52px;
+    height: 52px;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+    border: none;
+    background-image: url('./img/cross.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.modal-close-button:hover {
+    background-color: #E5E5E5;
+}
+
+.modal-close-button:active {
+    opacity: 0.5;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 36px;
+    padding-bottom: 64px;
+}
+
+.text-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 40px;
+}
+
+.date-input {
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    background-color: #F2F2F2;
+    width: 550px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.date-input:hover {
+    background-color: #E5E5E5;
+}
+
+.person {
+    display: flex;
+
+}
+
+.text-person {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 46px;
+}
+
+.number-person {
+    border: none;
+    background-color: #F2F2F2;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.number-person:hover{
+    background-color: #E5E5E5;
+}
+
+.button-find {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.find {
+    text-align: center;
+    background-color: #83B3D3;
+    padding: 18px 77px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    width: 717px;
+}
+
+.find:hover {
+    background-color: #68A2CA;
+}
+
+.find:active {
+    opacity: 0.7;
+}
+
+.modal-container-close {
+    display: none;
 }
