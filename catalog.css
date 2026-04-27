@@ -13,7 +13,14 @@
 body {
     margin: 0;
     padding: 0;
-    width: auto;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     font-family: 'PT sans', system-ui, sans-serif;
 }
 
@@ -25,6 +32,8 @@ body {
 
 .header-logo {
     margin-left: 70px;
+    height: 80px;
+    width: auto;
 }
 
 .header-logo-container {
@@ -85,6 +94,7 @@ body {
     line-height: 20px;
     letter-spacing: 0%;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .want-here:hover {
@@ -185,6 +195,8 @@ body {
     padding-top: 98px;
 }
 
+
+
 .filters-item {
     color: #ffffff;
     font-weight: 400;
@@ -205,6 +217,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+    text-transform: uppercase;
 }
 
 .apply:hover {
@@ -224,6 +237,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+    text-transform: uppercase;
 }
 
 .reset:hover{
@@ -263,10 +277,6 @@ body {
     filter: brightness(0.85);
 }
 
-.range {
-    width: auto;
-    max-width: 287px;
-}
 
 .card-hotel {
     display: flex;
@@ -279,15 +289,6 @@ body {
     gap: 15px;
     row-gap: 40px;
 }
-
-/*.card-hotel::after {          почему-то не работает, что-то я не понимаю
-    content: "";
-    display: block;
-    width: auto;
-    max-width: 1060px;
-    border-bottom: 1px solid #E5E5E5;
-    margin: 20px auto 0;
-}*/
 
 .hotel-section {
     border: 1px solid #E5E5E5;
@@ -303,7 +304,9 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: 15px;
+
 }
 
 .subtitle-type-hotel {
@@ -420,6 +423,7 @@ body {
     padding-top: 90px;
     gap: 8px;
     list-style: none;
+    margin: 0;
 }
 
 .page {
@@ -471,14 +475,17 @@ body {
     font-size: 30px;
     line-height: 36px;
     color: #000000;
+    margin: 0;
 }
 
-.slogan-footer {
+
+/***.slogan-footer {
    padding-left: 398px;
    padding-right: 398px;
    padding-top: 96px;
    color: #000000;
-}
+}***/
+
 
 .bottom-text-style {
     font-weight: 400;
@@ -487,9 +494,12 @@ body {
     letter-spacing: 0%;
 }
 
-.bottom-text-footer {
-    padding-left: 363px;
-    padding-right: 363px;
+.bottom-text-position {
+    display: flex;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 54px;
+    margin: 0;
 }
 
 .footer-list {
@@ -521,7 +531,6 @@ body {
     border: none;
     height: 50px;
     padding-left: 20px;
-    background-color: #F2F2F2;
 }
 
 .button-email {
@@ -535,6 +544,7 @@ body {
     border: none;
     height: 52px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .button-email:hover {
@@ -564,7 +574,7 @@ body {
     margin-bottom: 30px;
 }
 
-.logo-html:hover {
+.logo-html:hover {                    /*предполагаю, что оно не работает*/
     color: #756157;
 }
 
@@ -590,10 +600,15 @@ body {
     opacity: 0.5;
 }
 
-.social-media {
+.social-item {
     padding-left: 27px;
+    fill: #83B3D3;
 }
 
-.social-media:active {
+.social-item:hover {
+    color: #68A2CA;
+}
+
+.social-item:active {
     opacity: 0.5;
 }
